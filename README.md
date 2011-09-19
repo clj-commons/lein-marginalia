@@ -4,11 +4,11 @@
 
 ## Usage
 
-* Add `[lein-marginalia "0.6.0"]` to your project.clj's `:dev-dependencies`.
+* Add `[lein-marginalia "0.6.1"]` to your project.clj's `:dev-dependencies`.
 * `$ lein marg` in your project's root.
 
 or, install lein-marginalia as a global leiningen plugin by running `$
-lein plugin install lein-marginalia "0.6.0"`.
+lein plugin install lein-marginalia "0.6.1"`.
 
 ## License
 
