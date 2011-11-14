@@ -1,17 +1,11 @@
 (ns leiningen.marg
   "Run Marginalia against your project source files."
-  (:use [leiningen.compile :only [eval-in-project]]
-        marginalia.core))
+  (:use [leiningen.compile :only [eval-in-project]]))
 
 (defn marg [project & args]
-  (binding [marginalia.html/*resources* ""]
-    (marginalia.core/run-marginalia args))
-  #_(eval-in-project project
-                   `
+  (eval-in-project project
+                   `(binding [marginalia.html/*resources* ""]
+                      (marginalia.core/run-marginalia (list ~@args)))
                    nil
                    nil
                    '(require 'marginalia.core)))
-
-#_(.setMeta #'marg
-          (assoc (.meta #'marg)
-            :doc (with-out-str (run-marginalia (list "-h")))))
