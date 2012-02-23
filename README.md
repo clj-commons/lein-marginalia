@@ -2,16 +2,26 @@
 
 [Leiningen](https://github.com/technomancy/leiningen) plugin for [Marginalia](https://github.com/fogus/marginalia).
 
+## Installation
+
+### Leiningen 2
+
+Add `[lein-marginalia "0.7.0-SNAPSHOT"]` to the `:plugins` entry in
+either your project.clj file or your `:user` profile.
+
+### Leiningen 1
+
+Add `[lein-marginalia "0.7.0-SNAPSHOT"]` to your project.clj's
+`:dev-dependencies` or, install lein-marginalia as a user-level
+leiningen plugin by running
+`$ lein plugin install lein-marginalia 0.7.0-SNAPSHOT`.
+
 ## Usage
 
-* Add `[lein-marginalia "0.6.1"]` to your project.clj's `:dev-dependencies`.
-* `$ lein marg` in your project's root.
-
-or, install lein-marginalia as a global leiningen plugin by running `$
-lein plugin install lein-marginalia "0.6.1"`.
+`$ lein marg` in your project's root.
 
 ## License
 
-Copyright (C) 2011 Fogus
+Copyright (C) 2011 Michael Fogus and contributors.
 
 Distributed under the Eclipse Public License, the same as Clojure.
