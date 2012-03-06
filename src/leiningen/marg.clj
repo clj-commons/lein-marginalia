@@ -14,10 +14,19 @@
       (eip project form init)
       (eip project form nil nil init))))
 
+(def dep ['marginalia "0.7.0"])
+
+(defn- add-marg-dep [project]
+  ;; Leiningen 2 is a bit smarter about only conjing it in if it
+  ;; doesn't already exist and warning the user.
+  (if-let [conj-dependency (resolve 'leiningen.core.project/conj-dependency)]
+    (conj-dependency project dep)
+    (update-in project [:dependencies] conj dep)))
+
 (defn marg
   "Run Marginalia against your project source files."
   [project & args]
-  (eval-in-project project
+  (eval-in-project (add-marg-dep project)
                    `(binding [marginalia.html/*resources* ""]
                       (marginalia.core/run-marginalia (list ~@args)))
                    '(require 'marginalia.core)))
