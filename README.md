@@ -6,7 +6,7 @@
 
 ### Leiningen 2
 
-Add `[lein-marginalia "0.7.1"]` to the `:plugins` entry in
+Add `[[lein-marginalia "0.7.1"]]` to the `:plugins` entry in
 either your project.clj file or your `:user` profile.
 
 ### Leiningen 1
