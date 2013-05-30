@@ -20,8 +20,9 @@ leiningen plugin by running
 
 `$ lein marg <args>` in your project's root.
 
-## License
+License
+-------
 
-Copyright (C) 2011 Michael Fogus and contributors.
+Copyright (C) 2011-2013 Fogus and contributors.
 
 Distributed under the Eclipse Public License, the same as Clojure.
