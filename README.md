@@ -1,6 +1,6 @@
 # lein-marginalia
 
-[Leiningen](https://github.com/technomancy/leiningen) plugin for [Marginalia](https://github.com/fogus/marginalia).
+A [Leiningen](https://github.com/technomancy/leiningen) plugin for [Marginalia](https://github.com/fogus/marginalia).  You would most likely use this rather than Marginalia directly.
 
 ## Installation
 
