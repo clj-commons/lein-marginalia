@@ -23,8 +23,43 @@
     (conj-dependency project dep)
     (update-in project [:dependencies] conj dep)))
 
+;; ## Note:
+;; The docstring for the marg function is used by Leiningen when a
+;; user types `lein help marg`. Because of this, and because, for
+;; instance, an escaped asterisk in a docstring will cause errors when
+;; you attempt to run `lein marg`, some extra care (read: hacking) is
+;; required to get this docstring to look reasonable both in the lein
+;; help output and in a marginalia uberdoc.
+
 (defn marg
-  "Run Marginalia against your project source files."
+"Run Marginalia against your project source files.
+
+Usage:
+  
+    lein marg <options> <files>
+
+Marginalia accepts options as described below:
+
+-d --dir     Directory into which the documentation will be written (default `docs`)
+
+-f --file    File into which the documentation will be written (default `uberdoc.html`)
+
+-n --name    Project name (Taken from `project.clj` by default.)
+
+-v --version Project version (Taken from `project.clj` by default.)
+
+-D --desc    Project description (Taken from `project.clj` by default.)
+
+-a --deps    Project dependencies in the form `<group1>:<artifact1>:<version1>;<group2>...`
+             (Taken from `project.clj` by default.)
+
+-c --css     Additional css resources `<resource1>;<resource2>;...` 
+             (Taken from `project.clj` by default.)
+
+-j --js      Additional javascript resources `<jsfile1>;<jsfile2>;...` 
+             (Taken from `project.clj` by default.)
+
+-m --multi   Generate each namespace documentation as a separate file"
   [project & args]
   (eval-in-project (add-marg-dep project)
                    `(binding [marginalia.html/*resources* ""]
