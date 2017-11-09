@@ -1,5 +1,7 @@
 # lein-marginalia
 
+[![Clojars Project](https://img.shields.io/clojars/v/lein-marginalia.svg)](https://clojars.org/lein-marginalia)
+
 A [Leiningen](https://github.com/technomancy/leiningen) plugin for [Marginalia](https://github.com/gdeer81/marginalia).  You would most likely use this rather than Marginalia directly.
 
 ## Installation
