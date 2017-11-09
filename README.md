@@ -6,15 +6,15 @@ A [Leiningen](https://github.com/technomancy/leiningen) plugin for [Marginalia](
 
 ### Leiningen 2
 
-Add `[[lein-marginalia "0.9.0"]]` to the `:plugins` entry in
+Add `[[lein-marginalia "0.9.1"]]` to the `:plugins` entry in
 either your project.clj file or your `:user` profile.
 
 ### Leiningen 1
 
-Add `[lein-marginalia "0.9.0"]` to your project.clj's
+Add `[lein-marginalia "0.9.1"]` to your project.clj's
 `:dev-dependencies` or, install lein-marginalia as a user-level
 leiningen plugin by running
-`$ lein plugin install lein-marginalia 0.9.0`.
+`$ lein plugin install lein-marginalia 0.9.1`.
 
 ## Usage
 
@@ -23,6 +23,6 @@ leiningen plugin by running
 License
 -------
 
-Copyright (C) 2011-2013 Fogus and contributors.
+Copyright (C) 2011-2017 Gary, Fogus and contributors.
 
 Distributed under the Eclipse Public License, the same as Clojure.

@@ -14,7 +14,7 @@
       (eip project form init)
       (eip project form nil nil init))))
 
-(def dep ['marginalia "0.9.0"])
+(def dep ['marginalia "0.9.1"])
 
 (defn- add-marg-dep [project]
   ;; Leiningen 2 is a bit smarter about only conjing it in if it
@@ -35,7 +35,7 @@
 "Run Marginalia against your project source files.
 
 Usage:
-  
+
     lein marg <options> <files>
 
 Marginalia accepts options as described below:
@@ -53,10 +53,10 @@ Marginalia accepts options as described below:
 -a --deps    Project dependencies in the form `<group1>:<artifact1>:<version1>;<group2>...`
              (Taken from `project.clj` by default.)
 
--c --css     Additional css resources `<resource1>;<resource2>;...` 
+-c --css     Additional css resources `<resource1>;<resource2>;...`
              (Taken from `project.clj` by default.)
 
--j --js      Additional javascript resources `<jsfile1>;<jsfile2>;...` 
+-j --js      Additional javascript resources `<jsfile1>;<jsfile2>;...`
              (Taken from `project.clj` by default.)
 
 -m --multi   Generate each namespace documentation as a separate file"
