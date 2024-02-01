@@ -8,15 +8,15 @@ A [Leiningen](https://leiningen.org/) plugin for [Marginalia](https://github.com
 
 ### Leiningen 2
 
-Add `[[lein-marginalia "0.9.1"]]` to the `:plugins` entry in
+Add `[[lein-marginalia "0.9.2"]]` to the `:plugins` entry in
 either your `project.clj` file or your `:user` profile.
 
 ### Leiningen 1
 
-Add `[lein-marginalia "0.9.1"]` to your `project.clj`'s
+Add `[lein-marginalia "0.9.2"]` to your `project.clj`'s
 `:dev-dependencies` or, install lein-marginalia as a user-level
 leiningen plugin by running
-`$ lein plugin install lein-marginalia 0.9.1`.
+`$ lein plugin install lein-marginalia 0.9.2`.
 
 ## Usage
 
