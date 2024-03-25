@@ -1,10 +1,11 @@
-pom.xml
 *jar
-/lib/
-/classes/
+.calva/repl.calva-repl
 .lein-deps-sum
-docs
-target
 /.clj-kondo/.cache
 /.lsp/.cache
 /.portal/vs-code.edn
+/classes/
+/lib/
+docs
+pom.xml
+target
